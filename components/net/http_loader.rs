@@ -20,12 +20,13 @@ use devtools_traits::{
 };
 use devtools_traits::{HttpResponse as DevtoolsHttpResponse, NetworkEvent};
 use headers_core::HeaderMapExt;
+use headers_ext::authorization::Basic;
 use headers_ext::{AccessControlAllowCredentials, AccessControlAllowHeaders};
 use headers_ext::{
     AccessControlAllowMethods, AccessControlRequestHeaders, AccessControlRequestMethod,
     Authorization,
 };
-use headers_ext::{AccessControlAllowOrigin, AccessControlMaxAge, Basic};
+use headers_ext::{AccessControlAllowOrigin, AccessControlMaxAge};
 use headers_ext::{CacheControl, ContentEncoding, ContentLength};
 use headers_ext::{
     Host, IfModifiedSince, LastModified, Origin as HyperOrigin, Pragma, Referer, UserAgent,
